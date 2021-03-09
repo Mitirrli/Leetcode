@@ -30,7 +30,7 @@ class Solution {
                 if($matchDictionary[$s[$i]] !== array_pop($stack)) {
                     return false;
                 }
-		    }
+		 	}
 	    }
 		
 		//到最后数组应该全部匹配完
