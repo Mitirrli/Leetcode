@@ -1,3 +1,5 @@
+<?php
+
 class Solution {
     /**
      * @param String $s
