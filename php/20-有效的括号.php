@@ -12,10 +12,10 @@ class Solution {
             
         //创建一个数组当作栈 array_push作为压栈操作 array_pop作为出栈操作
         $stack = [];
-        
+
         //字符串长度
         $length = strlen($s);
-        
+
         //遍历字符串
         for ($i = 0; $i < $length; $i++)
         {
@@ -29,7 +29,7 @@ class Solution {
                 }
             }
         }
-                
+
         //到最后数组应该全部匹配完
         return empty($stack) ? true : false;
     }
