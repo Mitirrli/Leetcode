@@ -33,15 +33,14 @@ class MyQueue {
         while (1) {
             // 翻转栈
             if (!$this->stack1->isEmpty()) {
-                $value = $this->stack1->pop();
-                $this->stack2->push($value);
+                $this->stack2->push($this->stack1->pop());
             } else {
                 break;
             }
         }
 
         // 将队列第一个元素弹出
-        $this->stack2->pop();
+        $value = $this->stack2->pop();
         while (!$this->stack2->isEmpty()) {
             $this->stack1->push($this->stack2->pop());
         }
